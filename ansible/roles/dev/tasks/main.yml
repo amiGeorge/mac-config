@@ -1,0 +1,15 @@
+---
+  - name: Ensure iterm2 is installed
+    homebrew_cask:
+      name: iterm2
+
+  - name: Add required homebrew repos
+    homebrew_tap:
+      name: homebrew/cask-fonts
+  
+  - name: Ensure graphical utils are installed
+    homebrew_cask:
+      name:
+        - docker
+        - visual-studio-code
+        - chromium

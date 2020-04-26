@@ -1,0 +1,11 @@
+---
+  dependencies:
+    - role: geerlingguy.mas
+      vars:
+        mas_installed_apps:
+          - id: 441258766
+            name: Magnet
+          - id: 747648890
+            name: Telegram
+          - id: 1494210770
+            name: "Tomato 2: Pomodoro Timer"
