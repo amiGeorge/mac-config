@@ -22,3 +22,17 @@
       - domain: com.apple.dock
         key: no-bouncing
         value: TRUE
+  - name: Ensure screenshots directory exists
+    file:
+        path: ~/Documents/screenshots
+        state: directory
+
+  - name: Set default screenshots diresctory
+    osx_defaults:
+      key: "{{ item.key }}"
+      domain: "{{ item.domain }}"
+      value: "{{ item.value }}"
+    loop:
+      - domain: com.apple.screencapture
+        key: location
+        value: ~/Documents/screenshots
