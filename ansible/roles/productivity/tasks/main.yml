@@ -8,6 +8,7 @@
         - skype
         - tor-browser
         - transmission
+        - vlc
         - zoomus
 
   - name: Recuce noise from the macos
