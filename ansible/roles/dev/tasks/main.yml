@@ -11,5 +11,6 @@
     homebrew_cask:
       name:
         - docker
-        - visual-studio-code
         - chromium
+        - java
+        - visual-studio-code
