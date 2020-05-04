@@ -6,11 +6,19 @@
   - name: Add required homebrew repos
     homebrew_tap:
       name: homebrew/cask-fonts
-  
+
+  - name: Ensure console utils are installed
+    homebrew:
+      name:
+        - ansible-lint
+        - bat
+        - git
+
   - name: Ensure graphical utils are installed
     homebrew_cask:
       name:
         - docker
         - chromium
         - java
+        - ngrok
         - visual-studio-code
