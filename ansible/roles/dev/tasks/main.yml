@@ -13,6 +13,7 @@
         - ansible-lint
         - bat
         - git
+        - yarn
 
   - name: Ensure graphical utils are installed
     homebrew_cask:
